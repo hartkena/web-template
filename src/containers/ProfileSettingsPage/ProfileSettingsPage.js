@@ -45,7 +45,7 @@ export const ProfileSettingsPageComponent = props => {
   const { userFields } = config.user;
 
   const handleSubmit = (values, userType) => {
-    const { firstName, lastName, bio: rawBio, ...rest } = values;
+    const { firstName, lastName, displayName, bio: rawBio, ...rest } = values;
 
     // Ensure that the optional bio is a string
     const bio = rawBio || '';
@@ -53,6 +53,7 @@ export const ProfileSettingsPageComponent = props => {
     const profile = {
       firstName: firstName.trim(),
       lastName: lastName.trim(),
+      displayName: displayName.trim(),
       bio,
       publicData: {
         ...pickUserFieldsData(rest, 'public', userType, userFields),
@@ -79,6 +80,7 @@ export const ProfileSettingsPageComponent = props => {
   const {
     firstName,
     lastName,
+    displayName,
     bio,
     publicData,
     protectedData,
@@ -95,6 +97,7 @@ export const ProfileSettingsPageComponent = props => {
       initialValues={{
         firstName,
         lastName,
+        displayName,
         bio,
         profileImage: user.profileImage,
         ...initialValuesForUserFields(publicData, 'public', userType, userFields),
