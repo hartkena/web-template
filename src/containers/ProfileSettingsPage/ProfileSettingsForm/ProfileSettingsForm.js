@@ -302,6 +302,25 @@ class ProfileSettingsFormComponent extends Component {
                   />
                 </div>
               </div>
+                      
+
+                <div className={css.nameContainer}>
+                  <FieldTextInput
+                    className={css.lastName}
+                    type="text"
+                    id="displayName"
+                    name="displayName"
+                    label={intl.formatMessage({
+                      id: 'ProfileSettingsForm.displayNameLabel',
+                    })}
+                    placeholder={intl.formatMessage({
+                      id: 'ProfileSettingsForm.displayNamePlaceholder',
+                    })}
+                  />
+                </div>
+
+
+                      
               <div className={classNames(css.sectionContainer)}>
                 <H4 as="h2" className={css.sectionTitle}>
                   <FormattedMessage id="ProfileSettingsForm.bioHeading" />
