@@ -138,7 +138,7 @@ const SignupFormComponent = props => (
                 )}
               />
             </div>
-            <div className={css.displayName}>
+            <div className={css.name}>
             <FieldTextInput
               className={css.displayName}
               type="text"
