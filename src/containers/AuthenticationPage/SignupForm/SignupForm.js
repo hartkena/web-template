@@ -138,6 +138,22 @@ const SignupFormComponent = props => (
                 )}
               />
             </div>
+
+            <FieldTextInput
+              className={css.displayName}
+              type="text"
+              id={formId ? `${formId}.displayName` : 'displayName'}
+              name="displayName"
+              autoComplete="displayName"
+              label={intl.formatMessage({
+                id: 'SignupForm.displayNameLabel',
+              })}
+              placeholder={intl.formatMessage({
+                id: 'SignupForm.displayNamePlaceholder',
+              })}
+            />
+
+                
             <FieldTextInput
               className={css.password}
               type="password"
