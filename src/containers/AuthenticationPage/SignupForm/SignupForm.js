@@ -138,7 +138,7 @@ const SignupFormComponent = props => (
                 )}
               />
             </div>
-
+            <div>
             <FieldTextInput
               className={css.displayName}
               type="text"
@@ -152,7 +152,7 @@ const SignupFormComponent = props => (
                 id: 'SignupForm.displayNamePlaceholder',
               })}
             />
-
+            </div>
                 
             <FieldTextInput
               className={css.password}
