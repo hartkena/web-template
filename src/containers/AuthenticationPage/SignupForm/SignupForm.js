@@ -151,6 +151,11 @@ const SignupFormComponent = props => (
               placeholder={intl.formatMessage({
                 id: 'SignupForm.displayNamePlaceholder',
               })}
+              validate={validators.required(
+                  intl.formatMessage({
+                    id: 'SignupForm.displayNameRequired',
+                  })
+                )}
             />
             </div>
                 
