@@ -301,7 +301,7 @@ class ProfileSettingsFormComponent extends Component {
                     validate={lastNameRequired}
                   />
                 </div>
-              </div>
+              
                       
 
                 <div className={css.nameContainer}>
@@ -318,7 +318,7 @@ class ProfileSettingsFormComponent extends Component {
                     })}
                   />
                 </div>
-
+              </div>
 
                       
               <div className={classNames(css.sectionContainer)}>
